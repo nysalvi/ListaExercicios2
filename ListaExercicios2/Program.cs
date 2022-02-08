@@ -11,7 +11,7 @@ namespace ListaExercicios2
         {
             float a, b, c; 
             string _a, _b, _c;
-            while (true)
+            while (true) 
             {
                 Console.WriteLine("Digite um número para A : ");
                 _a = Console.ReadLine();             
