@@ -8,7 +8,7 @@ namespace ListaExercicios2
         //• Faça um algoritmo que leia os valores A, B, C e imprima na tela se a soma de A + B é menor que C.
         //@"(\-?\d+\.?\d*){3}" 
         static void Main(string[] args)
-        {
+        { 
             float a, b, c; 
             string _a, _b, _c;
             while (true) 
