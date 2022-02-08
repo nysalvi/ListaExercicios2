@@ -9,7 +9,7 @@ namespace ListaExercicios2
         //@"(\-?\d+\.?\d*){3}" 
         static void Main(string[] args)
         {
-            float a, b, c;
+            float a, b, c; 
             string _a, _b, _c;
             while (true)
             {
