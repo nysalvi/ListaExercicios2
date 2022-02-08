@@ -6,7 +6,6 @@ namespace ListaExercicios2
     {
         //Exercício 1:
         //• Faça um algoritmo que leia os valores A, B, C e imprima na tela se a soma de A + B é menor que C.
-        //@"(\-?\d+\.?\d*){3}" 
         static void Main(string[] args)
         { 
             float a, b, c; 
@@ -19,13 +18,13 @@ namespace ListaExercicios2
                 _b = Console.ReadLine();
                 Console.WriteLine("Digite um número para C : ");
                 _c = Console.ReadLine();
-                if (float.TryParse(_a, out a) && float.TryParse(_b, out b) && float.TryParse(_c, out c))                    
+                if (Regex.IsMatch(_a + _b + _c, @"^(\-?[0-9]+\,?[0-9]*){3}$")) // "," pra float pq foi instalado em pt 
                 {
                     (a, b, c) = (float.Parse(_a), float.Parse(_b), float.Parse(_c));                    
                     if (a + b <= c)
                     {
-                        Console.WriteLine("A soma de A com B é menor ou igual a C");                        
-                        break;
+                        Console.WriteLine("A soma de A com B é menor ou igual a C");
+                        break;  
                     }
                     Console.WriteLine("A soma de A com B é maior que C");
                     break;
